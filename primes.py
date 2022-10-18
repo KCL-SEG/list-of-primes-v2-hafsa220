@@ -12,5 +12,8 @@ def primes(number_of_primes):
 
 
 number = int(input("enter a positive number > 0: "))
-
-primes(number)
+try:
+    if number >= 0:
+        primes(number)
+except ValueError:
+    print("this is not a positive integer > 0")
